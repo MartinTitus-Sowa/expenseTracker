@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href='mediaquery.css'>
+    <title>Expense Tracker App</title>
+</head>
+
+<body>
+    <div class="grid__container">
+        <header>
+            <div class="headerInfo__wrapper">
+                <h2> <span>Ex</span>pense <span>Tra</span>cker</h2>
+            </div>
+
+        </header>
+
+        <section class="form__container">
+            <div class="input__wrapper">
+                <label for="exp__name" class="exp__name__label">Item / Service</label>
+                <input type="text" required placeholder="Name Item" name="exp_name" id="exp__name">
+            </div>
+            <div class="dateAmount__wrapper">
+                <input type="date" name="" id="exp__date">
+                <input type="number" name="" placeholder="Amount" id="exp__amount">
+            </div>
+            <button class="exp__btn" id="exp__btn">Track Expense</button>
+        </section>
+
+        <main id="expenseTable__wrapper" class="expenseTable__wrapper">
+            <table class="table__data" id='table__data'>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody" class="tbody">
+                    <!-- <tr>
+                        <td>Abrahio</td>
+                        <td>12/12/2021</td>
+                        <td>458,000</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>Abrahio</td>
+                        <td>12/12/2021</td>
+                        <td>458,000</td>
+                        <td>X</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

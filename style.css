@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+    font-family: sans-serif;
+}
+
+.grid__container {
+    width: 98%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 130px 130px auto;
+    grid-template-columns: 1fr;
+    /* margin: 1.5rem; */
+    row-gap: 1rem;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin: auto 0;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: #28527a; */
+    color: white;
+    border-radius: .5rem;
+    background: linear-gradient(to top left, #39b385, #9be15d);
+    grid-row: 1/2;
+}
+
+span {
+    width: 6rem;
+    height: 1.6rem;
+    background-color: #fbeeac;
+    color: #28527a;
+    /* padding: .2rem; */
+    border-radius: .4rem;
+}
+
+.form__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 7rem;
+    box-sizing: border-box;
+    grid-row: 2/3;
+    /* position: fixed; */
+}
+
+.input__wrapper {
+    width: 100%;
+    margin-top: .8rem;
+}
+
+.exp__name__label {
+    font-size: .7rem;
+    padding-left: 1.3rem;
+    /* margin-bottom: 1.9rem; */
+    display: none;
+    font-family: sans-serif;
+}
+
+#exp__name {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: .4rem;
+    padding-left: 1.3rem;
+    margin-top: .0rem;
+    height: 1.6rem;
+    box-sizing: border-box;
+    /* ////////////////// */
+    /* width: 100%; */
+    /* border: none; */
+    background-color: rgba(255, 255, 255, 0.4);
+    font-family: inherit;
+    /* font-size: 1.5rem; */
+    text-align: center;
+    color: #333;
+    /* padding: 0.3rem 1rem; */
+    /* border-radius: 0.7rem; */
+    transition: all 0.3s;
+}
+
+input:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.dateAmount__wrapper {
+    margin-top: .6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input[type='text'] {
+    box-shadow: 0 .15rem .2rem rgba(0, 0, 0, .5);
+}
+
+input[type='date'],
+input[type='number'] {
+    height: 1.6rem;
+    width: 40%;
+    border: none;
+    border-radius: .4rem;
+    outline: none;
+    text-align: center;
+    padding-left: 1.3rem;
+    margin-top: .0rem;
+    box-shadow: 0 .2rem .2rem rgba(0, 0, 0, .5);
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all 0.3s;
+    /* display: block; */
+}
+
+#exp__btn {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    padding: .5rem;
+    border: none;
+    border-radius: .5rem;
+    margin-top: .6rem;
+    background-color: #f4d160;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 .2rem .2rem rgba(0, 0, 0, .5);
+}
+
+.exp__btn:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[ */
+
+.expenseTable__wrapper {
+    box-sizing: border-box;
+    border-collapse: collapse;
+    max-width: 95%;
+    margin: 0 auto;
+    font-size: 1.1em;
+    grid-row: 3/-1;
+}
+
+.table__data {
+    border-collapse: collapse;
+    margin: 0 auto;
+    /* margin-top: 2.5rem; */
+    font-size: 1.1em;
+    min-width: 300px;
+    max-width: 100%;
+    overflow-x: none;
+}
+
+thead tr {
+    /* background-color: cadetblue; */
+    background: linear-gradient(to top left, #39b385, #9be15d);
+    color: white;
+    text-align: left;
+    /* padding: 1.2rem 1.4rem; */
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+th {
+    color: #fff;
+    padding: .9rem 1.5rem;
+}
+
+.table__row {
+    transition: all 3s;
+    width: 100%;
+}
+
+tr,
+td {
+    padding: .5rem 1.4rem;
+    color: black;
+}
+
+td {
+    /* width: ; */
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.tbody tr {
+    border-bottom: 1px solid #fbeeac;
+}
+
+.tbody {
+    max-width: 680px;
+}
+
+
+/* delete btn */
+
+.dlt__btn {
+    background-color: red;
+    color: white;
+    padding: .2rem .4rem;
+    border-radius: 3px;
+    opacity: .5;
+    border: none;
+}
+
+.dlt__btn:hover {
+    opacity: .8;
+}
